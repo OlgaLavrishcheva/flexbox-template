@@ -1,0 +1,24 @@
+.main-breadcrumb {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 10px 20px 10px 0;
+  text-align: right;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  color: $color-gray;
+
+  & a {
+    color: $color-light;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent;
+      @include text-shadow;
+    }
+  }
+}
+
+.fa-caret-right:before {
+  margin-left: 1px;
+  content: "\f0da";
+}

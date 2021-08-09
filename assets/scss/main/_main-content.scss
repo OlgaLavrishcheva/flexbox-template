@@ -1,0 +1,21 @@
+.main-content {
+  margin-top: 30px;
+
+  &-header {
+    font-family: $font-header;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.5em;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0) 100%);
+    letter-spacing: 3px;
+  }
+
+  &-body {
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7.5px 22.5px -7.5px;
+  }
+}

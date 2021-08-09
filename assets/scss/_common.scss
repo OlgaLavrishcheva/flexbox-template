@@ -1,13 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    opacity: 1;
-    background-image: url(../img/global-bg.jpg);
-    background-position: top center;
-    background-size: cover;
+  //width: 100%;
+  //max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 30px;
+  transition: opacity 1s ease 0s;
+  opacity: 1;
+  background-image: url("../img/global-bg.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
 }
 
 html {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    left: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  left: 1.5rem;
+  //overflow: scroll;
 }
 
+.content-container {
+  display: flex;
+}
