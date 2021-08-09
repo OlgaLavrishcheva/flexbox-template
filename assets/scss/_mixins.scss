@@ -36,6 +36,12 @@
   -webkit-line-clamp: 4;
 }
 
+@mixin block-form {
+  border-radius: 7px;
+  color: $color-light;
+  @include bg-color;
+}
+
 @mixin text-shadow {
   text-shadow: 1px 1px 3px $color-dark, 1px 1px 10px $color-dark;
 }

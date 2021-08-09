@@ -3,8 +3,6 @@
 }
 
 body {
-  //width: 100%;
-  //max-width: 1380px;
   margin: 0 auto;
   padding: 0 30px;
   transition: opacity 1s ease 0s;
@@ -19,9 +17,23 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   left: 1.5rem;
-  //overflow: scroll;
 }
 
 .content-container {
   display: flex;
+}
+
+.widget {
+  padding: 25px 15px;
+  margin-bottom: 15px;
+  line-height: 2em;
+  color: $color-gray;
+
+  h3 {
+    font-family: $font-header;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  @include block-form;
 }
