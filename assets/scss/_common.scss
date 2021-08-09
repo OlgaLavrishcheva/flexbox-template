@@ -22,20 +22,3 @@ html {
 .content-container {
   display: flex;
 }
-
-.widget {
-  padding: 25px 15px;
-  margin-bottom: 15px;
-  line-height: 2em;
-  color: $color-gray;
-
-  h3 {
-    font-family: $font-header;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    border-bottom: 1px solid #333333;
-    padding-bottom: 10px;
-    margin: 0 0 15px 0;
-  }
-  @include block-form;
-}
