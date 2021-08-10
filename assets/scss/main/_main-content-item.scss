@@ -2,6 +2,14 @@
   flex: 0 0 33.3333%;
   padding: 7.5px;
 
+  @include sm {
+    flex: 0 0 50%;
+  }
+
+  @include xx {
+    flex: 0 0 100%;
+  }
+
   &:hover {
     .main-content-item__title {
       color: $color-accent-dark;

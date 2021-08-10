@@ -1,9 +1,21 @@
 .aside-right {
-  flex: 0 0 240px;
   margin-bottom: 15px;
-  height: auto;
+  height: fit-content;
   order: 3;
   overflow: hidden;
+
+  @include lg-min {
+    flex: 0 0 240px;
+  }
+
+  @include lg-md {
+    width: 100%;
+  }
+
+  @include md-sm {
+    width: 50%;
+    padding-left: 7.5px;
+  }
 
   .widget {
     padding: 25px 0 0 0;

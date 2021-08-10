@@ -1,6 +1,15 @@
 .aside-left {
-  flex: 0 0 220px;
-  margin-bottom: 15px;
   height: auto;
-  order: 1;
+
+  @include md-min {
+    flex: 0 0 220px;
+    order: 1;
+    margin-bottom: 15px;
+  }
+
+  @include md-sm {
+    order: 2;
+    width: 50%;
+    padding-right: 7.5px;
+  }
 }
