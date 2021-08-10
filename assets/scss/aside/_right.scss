@@ -1,9 +1,9 @@
 .aside-right {
-  //flex: 0 0 240px;
-  width: 240px;
+  flex: 0 0 240px;
   margin-bottom: 15px;
   height: auto;
   order: 3;
+  overflow: hidden;
 
   .widget {
     padding: 25px 0 0 0;

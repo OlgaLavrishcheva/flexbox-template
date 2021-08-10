@@ -3,4 +3,10 @@
   color: $color-light;
   order: 2;
   padding: 0 30px;
+  -webkit-box-flex: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
 }
