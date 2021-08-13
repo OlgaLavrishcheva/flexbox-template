@@ -17,10 +17,14 @@
     @include md-min {
       margin-bottom: 16px;
     }
-    @include sm-min {
+    @include xs-min {
       padding-bottom: 7px;
       margin-bottom: 17px;
     }
+    //@include sm-min {
+    //  padding-bottom: 7px;
+    //  margin-bottom: 17px;
+    //}
     @include xs {
       padding-bottom: 7px;
       margin-bottom: 18px;
@@ -37,6 +41,14 @@
     list-style: none;
 
     @include lg-min {
+      //&:not(:nth-child(1)) {
+      //  padding-top: 3px;
+      //}
+      &:nth-child(1) {
+        padding-top: 1px;
+      }
+    }
+    @include md-xs {
       &:not(:nth-child(1)) {
         padding-top: 3px;
       }
@@ -44,14 +56,14 @@
         padding-top: 1px;
       }
     }
-    @include sm-min {
-      &:not(:nth-child(1)) {
-        padding-top: 3px;
-      }
-      &:nth-child(1) {
-        padding-top: 1px;
-      }
-    }
+    //@include sm-min {
+    //  &:not(:nth-child(1)) {
+    //    padding-top: 3px;
+    //  }
+    //  &:nth-child(1) {
+    //    padding-top: 1px;
+    //  }
+    //}
     @include xs {
       padding: 1px 0 2px 0;
     }

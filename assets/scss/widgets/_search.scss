@@ -7,15 +7,19 @@
   }
 
   h3 {
-    @include lg-min {
-      margin-bottom: 17px;
-    }
+    //@include lg-min {
+    //  margin-bottom: 17px;
+    //}
     @include md-min {
       margin-bottom: 17px;
     }
-    @include sm-min {
+    @include md-sm {
       padding-bottom: 7px;
-      margin-bottom: 16px;
+      margin-bottom: 17px;
+    }
+    @include sm-xs {
+      padding-bottom: 7px;
+      margin-bottom: 15px;
     }
     @include xs {
       padding-bottom: 7px;
