@@ -1,6 +1,69 @@
 .aside-left {
   height: auto;
 
+  p {
+    color: $color-gray;
+  }
+
+  .widget {
+    @include lg-min {
+      &:not(:nth-child(2)) {
+        padding: 16px 15px 22px 15px;
+      }
+      &:nth-child(2) {
+        padding: 16px 15px;
+      }
+      &:nth-child(3) {
+        padding-bottom: 1px;
+      }
+      h3 {
+        padding-bottom: 7px;
+      }
+    }
+    @include md-min {
+      padding: 16px 15px 22px 15px;
+
+      &:nth-child(2) {
+        padding: 16px 15px 15px 15px;
+      }
+      &:nth-child(3) {
+        padding-bottom: 1px;
+      }
+      h3 {
+        padding-bottom: 7px;
+        margin: 0 0 16px 0;
+      }
+    }
+    @include sm-min {
+
+      &:nth-child(3) {
+        padding-top: 16px;
+        padding-bottom: 1px;
+      }
+      h3 {
+        padding-bottom: 7px;
+        margin: 0 0 16px 0;
+      }
+    }
+    @include xs {
+      &:nth-child(3) {
+        padding-top: 16px;
+        padding-bottom: 1px;
+      }
+      h3 {
+        padding-bottom: 7px;
+        margin: 0 0 16px 0;
+      }
+    }
+    @include xx {
+      &:nth-child(2) {
+        h3 {
+          margin-bottom: 18px;
+        }
+      }
+  }
+  }
+
   @include md-min {
     flex: 0 0 220px;
     order: 1;

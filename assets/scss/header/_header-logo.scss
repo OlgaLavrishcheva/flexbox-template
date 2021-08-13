@@ -1,29 +1,61 @@
 .header-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 45px 20px 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 20px 45px 20px;
 
-    &__img img {
-        max-width: 400px;
-    }
+  @include sm {
+    padding: 15px 15px;
+  }
 
-    &__title {
-        font-family: "Lora", serif;
-        font-size: 3rem;
-        font-weight: 300;
-        letter-spacing: 0.35rem;
-        line-height: 3.5rem;
-        margin-top: 27px;
-    }
+  &__img {
+    display: block;
+    text-align: center;
 
-    &__paragraph {
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        line-height: 1.5em;
-        padding-top: 15px;
-        text-align: center;
+    img {
+      max-width: 400px;
+
+      @include sm-xx {
+        max-width: 300px;
+        margin-bottom: 11px;
+      }
+      @include xx {
+        width: 81%;
+        margin-bottom: 11px;
+      }
     }
+  }
+
+  &__title {
+    font-family: "Lora", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.36rem;
+    line-height: 3.5rem;
+    margin-top: 26px;
+    @include xs {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin: 0;
+    }
+  }
+
+  &__paragraph {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    padding-top: 15px;
+    text-align: center;
+    @include sm {
+      letter-spacing: 0.1em;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.25em;
+    }
+    @include xx {
+      white-space: pre-wrap;
+    }
+  }
 }

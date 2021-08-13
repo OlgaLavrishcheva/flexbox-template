@@ -11,6 +11,7 @@
 
     @include sm-min {
       display: flex;
+      margin: 5px 0 5px 0;
     }
 
     @include sm {
@@ -44,6 +45,7 @@
       line-height: 1.5em;
       text-decoration: none;
       padding: 10px 15px;
+      margin: 0 5px 0 5px;
 
       @include sm-min {
         &:hover,
@@ -80,6 +82,9 @@
 
     @include sm-min {
       display: none;
+    }
+    @include sm {
+      padding: 0;
     }
 
     &.active {

@@ -1,17 +1,70 @@
 .widget-categories {
 
+  @include md-min {
+    padding: 16px 15px 15px 15px;
+  }
+  @include sm-min {
+    padding: 16px 15px 15px 15px;
+  }
+  @include xs {
+    padding: 16px 15px 14px 15px;
+  }
+
+  h3 {
+    @include lg-min {
+      margin-bottom: 17px;
+    }
+    @include md-min {
+      margin-bottom: 16px;
+    }
+    @include sm-min {
+      padding-bottom: 7px;
+      margin-bottom: 17px;
+    }
+    @include xs {
+      padding-bottom: 7px;
+      margin-bottom: 18px;
+    }
+
+  }
+
   &__list {
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   &__item {
     list-style: none;
 
+    @include lg-min {
+      &:not(:nth-child(1)) {
+        padding-top: 3px;
+      }
+      &:nth-child(1) {
+        padding-top: 1px;
+      }
+    }
+    @include sm-min {
+      &:not(:nth-child(1)) {
+        padding-top: 3px;
+      }
+      &:nth-child(1) {
+        padding-top: 1px;
+      }
+    }
+    @include xs {
+      padding: 1px 0 2px 0;
+    }
+
     a {
       color: $color-light;
       text-decoration: none;
       transition: padding-left 0.5s;
+
+      @include md-min {
+        display: block;
+        padding: 1.5px 0;
+      }
     }
 
     &:hover {
@@ -20,6 +73,7 @@
         color: $color-accent;
         @include text-shadow;
       }
+
       background: rgba(0, 0, 0, 0.5);
       border-radius: 4px;
     }

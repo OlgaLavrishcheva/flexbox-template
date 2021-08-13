@@ -4,13 +4,20 @@
 
 body {
   margin: 0 auto;
-  padding: 0 30px;
   transition: opacity 1s ease 0s;
   opacity: 1;
   background-image: url("../img/global-bg.jpg");
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+
+  @include lg-min {
+  padding: 0 30px;
+  }
+
+  @include lg {
+    padding: 0 15px;
+  }
 }
 
 html {

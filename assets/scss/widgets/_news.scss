@@ -3,17 +3,34 @@
     display: flex;
     padding: 0 15px 5px 15px;
     flex-wrap: wrap;
+
+    @include md-min {
+      padding: 0 0 5px 0;
+    }
+    @include sm {
+      padding: 0;
+    }
   }
   &-title {
     display: block;
     overflow: hidden;
     width: 100%;
-    margin: 0 0 10px;
+    //margin: 0 0 10px;
     transition: color 0.5s;
     white-space: nowrap;
     letter-spacing: 1px;
     text-overflow: ellipsis;
     font-weight: 300;
+
+    @include lg-min {
+      margin: 0 0 6px;
+    }
+    @include md {
+      margin: 0;
+    }
+    @include xs {
+      margin: 0 0 6px 0;
+    }
   }
   &-image {
     width: 75px;
@@ -22,6 +39,16 @@
     overflow: hidden;
     border-radius: 4px;
     margin: 0 10px 15px 0;
+
+    @include lg-min {
+      margin: 0 10px 7px 0;
+    }
+    @include md-min {
+      margin: 0 10px 7px 0;
+    }
+    @include xs {
+      margin-bottom: 12px;
+    }
 
     img {
       transition: transform 0.5s;

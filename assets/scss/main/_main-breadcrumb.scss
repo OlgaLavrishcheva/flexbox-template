@@ -1,6 +1,6 @@
 .main-breadcrumb {
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-  padding: 10px 20px 10px 0;
+  padding: 11px 19px 10px 0;
   text-align: right;
   letter-spacing: 2px;
   border-radius: 6px;
@@ -19,6 +19,6 @@
 }
 
 .fa-caret-right:before {
-  margin-left: 1px;
   content: "\f0da";
+  margin-left: 1.5px;
 }
