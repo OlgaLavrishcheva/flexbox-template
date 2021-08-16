@@ -43,7 +43,7 @@
                 padding-bottom: 7px;
             }
         }
-        @include md-min
+        @include lg-md
         {
             padding: 16px 15px 22px 15px;
 
@@ -57,11 +57,11 @@
             }
             h3
             {
-                margin: 0 0 16px 0;
+                //margin: 0 0 16px 0;
                 padding-bottom: 7px;
             }
         }
-        @include xs-min
+        @include md-xs
         {
             &:nth-child(3)
             {
@@ -70,8 +70,12 @@
             }
             h3
             {
-                margin: 0 0 16px 0;
                 padding-bottom: 7px;
+            }
+        }
+        @include sm-xs {
+            h3 {
+                margin: 0 0 16px 0;
             }
         }
         @include xs
@@ -83,7 +87,7 @@
             }
             h3
             {
-                margin: 0 0 16px 0;
+                //margin: 0 0 16px 0;
                 padding-bottom: 7px;
             }
         }
