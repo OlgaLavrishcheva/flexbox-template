@@ -1,88 +1,108 @@
-.widget-search {
-  @include xs-min {
-    padding: 16px 15px 22px 15px;
-  }
-  @include xs {
-    padding: 16px 15px 22px 15px;
-  }
-
-  h3 {
-    //@include lg-min {
-    //  margin-bottom: 17px;
-    //}
-    @include md-min {
-      margin-bottom: 17px;
+.widget-search
+{
+    @include xs-min
+    {
+        padding: 16px 15px 22px 15px;
     }
-    @include md-sm {
-      padding-bottom: 7px;
-      margin-bottom: 17px;
+    @include xs
+    {
+        padding: 16px 15px 22px 15px;
     }
-    @include sm-xs {
-      padding-bottom: 7px;
-      margin-bottom: 15px;
+
+    h3
+    {
+        @include md-min
+        {
+            margin-bottom: 17px;
+        }
+        @include md-sm
+        {
+            margin-bottom: 17px;
+            padding-bottom: 7px;
+        }
+        @include sm-xs
+        {
+            margin-bottom: 15px;
+            padding-bottom: 7px;
+        }
+        @include xs
+        {
+            margin-bottom: 16px;
+            padding-bottom: 7px;
+        }
     }
-    @include xs {
-      padding-bottom: 7px;
-      margin-bottom: 16px;
+
+    form
+    {
+        position: relative;
     }
-  }
 
-  form {
-    position: relative;
-  }
+    &__input
+    {
+        font-size: .85rem;
 
-  &__input {
-    width: 100%;
-    padding: 7px 8px 7px 40px;
-    text-overflow: ellipsis;
-    border: 1px solid rgba(238, 238, 238, 0.15);
-    border-radius: 4px;
-    background: rgba(238, 238, 238, 0.1);
-    font-size: 0.85rem;
+        width: 100%;
+        padding: 7px 8px 7px 40px;
 
-    &:focus {
-      border: 1px solid rgba(238, 238, 238, 0.3);
-      outline: none;
-      background: rgba(238, 238, 238, 0.2);
+        text-overflow: ellipsis;
+
+        border: 1px solid rgba(238, 238, 238, .15);
+        border-radius: 4px;
+        background: rgba(238, 238, 238, .1);
+
+        &:focus
+        {
+            border: 1px solid rgba(238, 238, 238, .3);
+            outline: none;
+            background: rgba(238, 238, 238, .2);
+        }
     }
-  }
 
-  ::-webkit-input-placeholder {
-    color: $color-gray;
-  }
-
-  :-moz-placeholder {
-    color: $color-gray;
-  }
-
-  ::-moz-placeholder {
-    color: $color-gray;
-  }
-
-  :-ms-input-placeholder {
-    color: $color-gray;
-  }
-
-  ::-webkit-input-placeholder {
-    color: $color-gray;
-  }
-
-  &__submit {
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    cursor: pointer;
-    color: $color-light;
-    border: none;
-    border-right: 1px solid rgba(238, 238, 238, 0.1);
-    background-color: transparent;
-
-    @include xs-min {
-    padding: 5px 7px;
+    ::-webkit-input-placeholder
+    {
+        color: $color-gray;
     }
-    @include xs {
-      padding: 6px 7px;
-    }
-  }
 
+    :-moz-placeholder
+    {
+        color: $color-gray;
+    }
+
+    ::-moz-placeholder
+    {
+        color: $color-gray;
+    }
+
+    :-ms-input-placeholder
+    {
+        color: $color-gray;
+    }
+
+    ::-webkit-input-placeholder
+    {
+        color: $color-gray;
+    }
+
+    &__submit
+    {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+
+        cursor: pointer;
+
+        color: $color-light;
+        border: none;
+        border-right: 1px solid rgba(238, 238, 238, .1);
+        background-color: transparent;
+
+        @include xs-min
+        {
+            padding: 5px 7px;
+        }
+        @include xs
+        {
+            padding: 6px 7px;
+        }
+    }
 }

@@ -1,54 +1,63 @@
-@mixin text-shortener {
-  display: block;
-  overflow: hidden;
+@mixin text-shortener
+{
+    display: block;
+    overflow: hidden;
 
-  width: 100%;
+    width: 100%;
 
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-@mixin bg-color($alfa: 0.5, $color: $color-dark) {
-  background: rgba($color, $alfa);
+@mixin bg-color($alfa: .5, $color: $color-dark)
+{
+    background: rgba($color, $alfa);
 }
 
-@mixin block-header {
-  padding-bottom: 10px;
+@mixin block-header
+{
+    font-family: $font-header;
+    font-weight: 300;
 
-  letter-spacing: 1.5px;
+    padding-bottom: 10px;
 
-  border-bottom: 1px solid lighten($color-dark, 20%);
+    letter-spacing: 1.5px;
 
-  font-family: $font-header;
-  font-weight: 300;
+    border-bottom: 1px solid lighten($color-dark, 20%);
 }
 
-@mixin block-with-text {
-  display: -webkit-box;
-  overflow: hidden;
+@mixin block-with-text
+{
+    font-size: 13px;
+    line-height: 19px;
 
-  max-height: 75px;
+    display: -webkit-box;
+    overflow: hidden;
 
-  font-size: 13px;
-  line-height: 19px;
+    max-height: 75px;
 
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
-@mixin block-form {
-  border-radius: 7px;
-  color: $color-light;
-  @include bg-color;
+@mixin block-form
+{
+    color: $color-light;
+    border-radius: 7px;
+
+    @include bg-color;
 }
 
-@mixin text-shadow {
-  text-shadow: 1px 1px 3px $color-dark, 1px 1px 10px $color-dark;
+@mixin text-shadow
+{
+    text-shadow: 1px 1px 3px $color-dark, 1px 1px 10px $color-dark;
 }
 
-@mixin btn-active {
-  background: rgba(0, 0, 0, 0.3);
-  color: darkred;
-  border-radius: 4px;
-  @include text-shadow;
+@mixin btn-active
+{
+    color: darkred;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .3);
+
+    @include text-shadow;
 }

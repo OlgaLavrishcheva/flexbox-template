@@ -1,68 +1,84 @@
-.aside-right {
-  height: fit-content;
-  order: 3;
-  overflow: hidden;
+.aside-right
+{
+    overflow: hidden;
 
-  @include lg-min {
-    flex: 0 0 240px;
-    margin-bottom: 15px;
-  }
-  @include lg-md {
-    width: 100%;
-  }
-  @include md-xs {
-    width: 50%;
-    padding-left: 7.5px;
-  }
+    height: fit-content;
 
-  .widget {
-    @include lg-min {
-      padding: 16px 15px 18px 15px;
-      margin-bottom: 7px;
+    order: 3;
+    @include lg-min
+    {
+        margin-bottom: 15px;
+
+        flex: 0 0 240px;
     }
-    @include md-min {
-      padding: 16px 15px 18px 15px;
-      margin-bottom: 7.5px;
+    @include lg-md
+    {
+        width: 100%;
     }
-    @include xs-min {
-      padding: 16px 15px 15px 15px;
-      margin-bottom: 7.5px;
-    }
-    @include xs {
-      padding: 16px 15px 15px 15px;
-      margin-bottom: 7.5px;
+    @include md-xs
+    {
+        width: 50%;
+        padding-left: 7.5px;
     }
 
-    h3 {
-      @include lg-min {
-        padding: 0 0 7px 0;
-        margin-bottom: 14px;
-      }
-      @include md-min {
-        padding: 0 0 7px 0;
-        margin-bottom: 14px;
-      }
-      @include sm-min {
-        padding-bottom: 7px;
-        margin-bottom: 16px;
-      }
-      @include xs {
-        padding-bottom: 7px;
-      }
+    .widget
+    {
+        @include lg-min
+        {
+            margin-bottom: 7px;
+            padding: 16px 15px 18px 15px;
+        }
+        @include md-min
+        {
+            margin-bottom: 7.5px;
+            padding: 16px 15px 18px 15px;
+        }
+        @include xs-min
+        {
+            margin-bottom: 7.5px;
+            padding: 16px 15px 15px 15px;
+        }
+        @include xs
+        {
+            margin-bottom: 7.5px;
+            padding: 16px 15px 15px 15px;
+        }
+
+        h3
+        {
+            padding: 0 0 7px 0;
+
+            @include lg-min
+            {
+                margin-bottom: 14px;
+            }
+            @include md-min
+            {
+                margin-bottom: 14px;
+            }
+            @include sm-min
+            {
+                margin-bottom: 16px;
+            }
+        }
+
+        h4
+        {
+            @include md-min
+            {
+                margin: 0 0 6px 0;
+            }
+            @include sm-min
+            {
+                margin: -3px 0 6px 0;
+            }
+        }
     }
 
-    h4 {
-      @include md-min {
-        margin: 0 0 6px 0;
-      }
-      @include sm-min {
-        margin: -3px 0 6px 0;
-      }
-    }
-  }
+    a
+    {
+        text-decoration: none;
 
-  a {
-    color: $color-light;
-    text-decoration: none;
-  }
+        color: $color-light;
+    }
 }

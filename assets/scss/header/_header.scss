@@ -1,7 +1,9 @@
-.header-container {
-    margin-bottom: 30px;
-    color: $color-light;
+.header-container
+{
     min-height: 100px;
+    margin-bottom: 30px;
+
+    color: $color-light;
     border-radius: 0 0 7px 7px;
 
     @include bg-color;

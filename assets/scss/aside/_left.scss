@@ -1,89 +1,101 @@
-.aside-left {
-  height: auto;
+.aside-left
+{
+    height: auto;
 
-  p {
-    color: $color-gray;
-  }
+    @include md-min
+    {
+        margin-bottom: 15px;
 
-  .widget {
-    @include lg-min {
-      &:not(:nth-child(2)) {
-        padding: 16px 15px 22px 15px;
-      }
-      &:nth-child(2) {
-        padding: 16px 15px;
-      }
-      &:nth-child(3) {
-        padding-bottom: 1px;
-      }
-      h3 {
-        padding-bottom: 7px;
-      }
+        flex: 0 0 220px;
+        order: 1;
     }
-    @include md-min {
-      padding: 16px 15px 22px 15px;
+    @include md-xs
+    {
+        width: 50%;
+        padding-right: 7.5px;
 
-      &:nth-child(2) {
-        padding: 16px 15px 15px 15px;
-      }
-      &:nth-child(3) {
-        padding-bottom: 1px;
-      }
-      h3 {
-        padding-bottom: 7px;
-        margin: 0 0 16px 0;
-      }
+        order: 2;
     }
-    @include xs-min {
 
-      &:nth-child(3) {
-        padding-top: 16px;
-        padding-bottom: 1px;
-      }
-      h3 {
-        padding-bottom: 7px;
-        margin: 0 0 16px 0;
-      }
+    p
+    {
+        color: $color-gray;
     }
-    //@include sm-min {
-    //
-    //  &:nth-child(3) {
-    //    padding-top: 16px;
-    //    padding-bottom: 1px;
-    //  }
-    //  h3 {
-    //    padding-bottom: 7px;
-    //    margin: 0 0 16px 0;
-    //  }
-    //}
-    @include xs {
-      &:nth-child(3) {
-        padding-top: 16px;
-        padding-bottom: 1px;
-      }
-      h3 {
-        padding-bottom: 7px;
-        margin: 0 0 16px 0;
-      }
-    }
-    @include xx {
-      &:nth-child(2) {
-        h3 {
-          margin-bottom: 18px;
+
+    .widget
+    {
+        @include lg-min
+        {
+            &:not(:nth-child(2))
+            {
+                padding: 16px 15px 22px 15px;
+            }
+            &:nth-child(2)
+            {
+                padding: 16px 15px;
+            }
+            &:nth-child(3)
+            {
+                padding-bottom: 1px;
+            }
+            h3
+            {
+                padding-bottom: 7px;
+            }
         }
-      }
-  }
-  }
+        @include md-min
+        {
+            padding: 16px 15px 22px 15px;
 
-  @include md-min {
-    flex: 0 0 220px;
-    order: 1;
-    margin-bottom: 15px;
-  }
-
-  @include md-xs {
-    order: 2;
-    width: 50%;
-    padding-right: 7.5px;
-  }
+            &:nth-child(2)
+            {
+                padding: 16px 15px 15px 15px;
+            }
+            &:nth-child(3)
+            {
+                padding-bottom: 1px;
+            }
+            h3
+            {
+                margin: 0 0 16px 0;
+                padding-bottom: 7px;
+            }
+        }
+        @include xs-min
+        {
+            &:nth-child(3)
+            {
+                padding-top: 16px;
+                padding-bottom: 1px;
+            }
+            h3
+            {
+                margin: 0 0 16px 0;
+                padding-bottom: 7px;
+            }
+        }
+        @include xs
+        {
+            &:nth-child(3)
+            {
+                padding-top: 16px;
+                padding-bottom: 1px;
+            }
+            h3
+            {
+                margin: 0 0 16px 0;
+                padding-bottom: 7px;
+            }
+        }
+        @include xx
+        {
+            &:nth-child(2)
+            {
+                h3
+                {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
 }

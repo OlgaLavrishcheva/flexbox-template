@@ -1,38 +1,47 @@
-.main-content {
-  margin-top: 30px;
+.main-content
+{
+    margin-top: 30px;
 
-  &-header {
-    font-family: $font-header;
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.5em;
-    padding: 8px 12px;
-    border-radius: 6px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0) 100%);
-    letter-spacing: 3px;
+    &-header
+    {
+        font-family: $font-header;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.5em;
 
-    @include sm-min {
-      margin: 18.76px 0 22px 0;
+        padding: 8px 12px;
+
+        letter-spacing: 3px;
+
+        border-radius: 6px;
+        background: linear-gradient(to right, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .5) 90%, rgba(0, 0, 0, 0) 100%);
+
+        @include sm-min
+        {
+            margin: 18.76px 0 22px 0;
+        }
+        @include sm
+        {
+            font-size: 1.5rem;
+        }
+        @include xs
+        {
+            font-size: 1rem;
+        }
     }
 
-    @include sm {
-      font-size: 1.5rem;
-    }
+    &-body
+    {
+        display: flex;
 
-    @include xs {
-      font-size: 1rem;
-    }
-  }
+        margin: 0 -7.5px 22.5px -7.5px;
 
-  &-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -7.5px 22.5px -7.5px;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-
-    @include xs {
-      margin-top: 22px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+        @include xs
+        {
+            margin-top: 22px;
+        }
     }
-  }
 }
